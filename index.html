@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Browser Gaming Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DUAL PARALLAX BACKGROUND STAGE (TEKKEN 5 VIDEO -> JIN IMAGE AT THE END) -->
+    <div class="parallax-stage">
+        <video class="parallax-layer" id="bgTekken5" autoplay muted loop playsinline preload="auto" disablepictureinpicture></video>
+        <div class="parallax-layer" id="bgTekken3"></div>
+    </div>
+    <div class="aesthetic-overlay"></div>
+
+    <!-- MUTE / UNMUTE BUTTON FOR THE BACKGROUND VIDEO AUDIO -->
+    <button class="sound-btn" id="soundBtn" type="button" aria-label="Mute video sound" title="Mute / unmute video sound">
+        <svg class="icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"></polygon><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>
+        <svg class="icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"></polygon><line x1="22" y1="9" x2="16" y2="15"></line><line x1="16" y1="9" x2="22" y2="15"></line></svg>
+        <span id="soundLabel">Sound Off</span>
+    </button>
+
+    <!-- HERO HEADER -->
+    <header>
+        <h1>The Ultimate Browser Gaming Hub</h1>
+        <p class="subtitle">Instant Access to Modern Web Portals & Retro Tekken Classics</p>
+        <nav class="quick-nav">
+            <a href="#tekken-arena" class="nav-pill tekken-pill">Tekken Browser Arena</a>
+            <a href="#other-games" class="nav-pill">Modern Browser Games</a>
+            <a href="#minigame-lounge" class="nav-pill">Tic-Tac-Toe Lounge</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECTION 2: ALL TEKKEN GAMES ARENA (TRANSITIONS TO TEKKEN 3 PARALLAX) -->
+        <section id="tekken-arena" class="section-block">
+            <div class="section-header-box">
+                <h2 class="section-title title-magenta">The Iron Fist Arena: Play Tekken in Your Browser</h2>
+                <p class="section-desc">Experience Tekken 5: Dark Resurrection and the classic PS1 Trilogy (Tekken 1, 2 & 3) directly online.</p>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Note:</strong> These are full PlayStation & PSP games running directly in your browser. Load times and gameplay smoothness depend heavily on your internet connection speed.
+            </div>
+
+            <div class="grid">
+                <article class="card featured-tekken5">
+                    <div class="featured-info">
+                        <span class="featured-badge">Featured Next-Gen Emulation</span>
+                        <h3>Play Tekken 5 in Browser</h3>
+                        <p>Jump straight into <strong>Tekken 5: Dark Resurrection</strong> (tekkendr.live) right in your web browser. Fast-paced 3D combat, iconic fighters, and custom controller support with zero installation.</p>
+                    </div>
+                    <a href="https://tekkendr.live/" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Play Tekken 5 in Browser</a>
+                </article>
+
+                <article class="card card-magenta">
+                    <h3>RetroGames.cc</h3>
+                    <p>Massive library for emulated games, running the original PS1 Tekken trilogy smoothly with save-state support.</p>
+                    <div class="button-group">
+                        <a href="https://www.retrogames.cc/psx-games/tekken.html" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 1</a>
+                        <a href="https://www.retrogames.cc/psx-games/tekken-2.html" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 2</a>
+                        <a href="https://www.retrogames.cc/psx-games/tekken-3.html" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 3</a>
+                    </div>
+                </article>
+
+                <article class="card card-magenta">
+                    <h3>ArcadeSpot.com</h3>
+                    <p>A clean interface hosting both original Tekken arcade hardware versions and PlayStation console ports.</p>
+                    <div class="button-group">
+                        <a href="https://arcadespot.com/game/tekken/" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 1</a>
+                        <a href="https://arcadespot.com/game/tekken-2/" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 2</a>
+                        <a href="https://arcadespot.com/game/tekken-3/" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 3</a>
+                    </div>
+                </article>
+
+                <article class="card card-magenta">
+                    <h3>MyEmulator.online</h3>
+                    <p>A sleek platform explicitly built for browser-based emulation, handling 32-bit era 3D fighting games effortlessly.</p>
+                    <div class="button-group">
+                        <a href="https://myemulator.online/playstation/tekken" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 1</a>
+                        <a href="https://myemulator.online/playstation/tekken-2" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 2</a>
+                        <a href="https://myemulator.online/playstation/tekken-3" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 3</a>
+                    </div>
+                </article>
+
+                <article class="card card-magenta">
+                    <h3>ClassicReload.com</h3>
+                    <p>Focused heavily on software preservation; a reliable hub for booting up classic 90s fighting games.</p>
+                    <div class="button-group">
+                        <a href="https://classicreload.com/search?search_api_views_fulltext=tekken+1" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 1</a>
+                        <a href="https://classicreload.com/search?search_api_views_fulltext=tekken+2" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 2</a>
+                        <a href="https://classicreload.com/search?search_api_views_fulltext=tekken+3" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 3</a>
+                    </div>
+                </article>
+
+                <article class="card card-magenta">
+                    <h3>PlayRetroGames.com</h3>
+                    <p>Dedicated hub for the 8-bit to 32-bit eras, featuring built-in keyboard and gamepad mapping support.</p>
+                    <div class="button-group">
+                        <a href="https://www.playretrogames.com/search/tekken" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 1</a>
+                        <a href="https://www.playretrogames.com/search/tekken+2" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 2</a>
+                        <a href="https://www.playretrogames.com/search/tekken+3" target="_blank" rel="noopener noreferrer" class="btn btn-magenta">Tekken 3</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION 1: MODERN BROWSER GAMES (TEKKEN 5 PARALLAX ACTIVE) -->
+        <section id="other-games" class="section-block">
+            <div class="section-header-box">
+                <h2 class="section-title title-cyan">Top 10 Modern Browser Game Portals</h2>
+                <p class="section-desc">Jump into action, 3D shooters, strategy, and casual web games with zero downloads.</p>
+            </div>
+
+            <div class="grid">
+                <article class="card card-cyan">
+                    <h3>Poki</h3>
+                    <p>A massive, smooth library of casual, action, and puzzle games that work flawlessly across desktop and mobile devices.</p>
+                    <a href="https://poki.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+                <article class="card card-cyan">
+                    <h3>CrazyGames</h3>
+                    <p>The go-to spot for 3D graphics, multiplayer .io games, driving simulators, and intense web-based shooters.</p>
+                    <a href="https://crazygames.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+                <article class="card card-cyan">
+                    <h3>itch.io</h3>
+                    <p>The ultimate hub for independent developers hosting thousands of unique, creative, and experimental web games.</p>
+                    <a href="https://itch.io/games/free/platform-web" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+                <article class="card card-cyan">
+                    <h3>Coolmath Games</h3>
+                    <p>An iconic gaming portal hosting some of the most addictive puzzle, strategy, logic, and skill games on the web.</p>
+                    <a href="https://coolmathgames.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+                <article class="card card-cyan">
+                    <h3>Kongregate</h3>
+                    <p>A classic titan of browser gaming hosting thousands of deep strategy, idle, card, and role-playing games.</p>
+                    <a href="https://kongregate.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+                <article class="card card-cyan">
+                    <h3>Armor Games</h3>
+                    <p>A legendary name maintaining a remarkably high standard for quality tower defense, adventure, and MMO titles.</p>
+                    <a href="https://armorgames.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+                <article class="card card-cyan">
+                    <h3>Board Game Arena</h3>
+                    <p>Play hundreds of official, real-world tabletop and board games online directly against players worldwide.</p>
+                    <a href="https://boardgamearena.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+                <article class="card card-cyan">
+                    <h3>Y8 Games</h3>
+                    <p>A massive archive boasting niche arcade hits, classic web games, and retro multiplayer titles.</p>
+                    <a href="https://y8.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+                <article class="card card-cyan">
+                    <h3>Addicting Games</h3>
+                    <p>Quick, funny, and highly replayable arcade-style games perfect for killing downtime instantly.</p>
+                    <a href="https://addictinggames.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+                <article class="card card-cyan">
+                    <h3>Arkadium</h3>
+                    <p>The best place for a relaxed pace, specializing in high-quality Solitaire, Mahjong, crosswords, and Sudoku.</p>
+                    <a href="https://arkadium.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyan">Play Now</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION 3: NEON TIC-TAC-TOE AT THE BOTTOM (TEKKEN 3 PARALLAX ACTIVE) -->
+        <section id="minigame-lounge" class="section-block" style="margin-bottom: 0;">
+            <div class="section-header-box">
+                <h2 class="section-title title-gold">Arcade Lounge: Neon Tic-Tac-Toe</h2>
+                <p class="section-desc">Take a quick break between matches right here on the page.</p>
+            </div>
+
+            <div class="minigame-container">
+                <div class="status-text" id="gameStatus">Player X's Turn</div>
+                <div class="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+                <button class="reset-btn" id="resetBtn">Reset Grid</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
