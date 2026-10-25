@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- DUAL PARALLAX BACKGROUND STAGE (TEKKEN 5 VIDEO -> JIN IMAGE AT THE END) -->
+    <!-- 2-STAGE PARALLAX BACKGROUND STAGE (TEKKEN 5 VIDEO -> GTA 5 VIDEO, WHICH STAYS TO THE END OF THE PAGE) -->
     <div class="parallax-stage">
         <video class="parallax-layer" id="bgTekken5" autoplay muted loop playsinline preload="auto" disablepictureinpicture></video>
-        <div class="parallax-layer" id="bgTekken3"></div>
+        <video class="parallax-layer" id="bgGta5" autoplay loop muted playsinline preload="auto" disablepictureinpicture></video>
     </div>
     <div class="aesthetic-overlay"></div>
 
@@ -27,13 +27,14 @@
         <p class="subtitle">Instant Access to Modern Web Portals & Retro Tekken Classics</p>
         <nav class="quick-nav">
             <a href="#tekken-arena" class="nav-pill tekken-pill">Tekken Browser Arena</a>
+            <a href="#gta-arena" class="nav-pill">GTA 5 Arena</a>
             <a href="#other-games" class="nav-pill">Modern Browser Games</a>
             <a href="#minigame-lounge" class="nav-pill">Tic-Tac-Toe Lounge</a>
         </nav>
     </header>
 
     <main>
-        <!-- SECTION 2: ALL TEKKEN GAMES ARENA (TRANSITIONS TO TEKKEN 3 PARALLAX) -->
+        <!-- SECTION 2: ALL TEKKEN GAMES ARENA (TEKKEN 5 VIDEO BACKGROUND) -->
         <section id="tekken-arena" class="section-block">
             <div class="section-header-box">
                 <h2 class="section-title title-magenta">The Iron Fist Arena: Play Tekken in Your Browser</h2>
@@ -45,7 +46,8 @@
             </div>
 
             <div class="grid">
-                <article class="card featured-tekken5">
+                <article class="card featured-tekken5 featured-has-art" id="tekkenCard">
+                    <div class="featured-art" role="img" aria-label="Tekken 5: Dark Resurrection artwork"></div>
                     <div class="featured-info">
                         <span class="featured-badge">Featured Next-Gen Emulation</span>
                         <h3>Play Tekken 5 in Browser</h3>
@@ -106,7 +108,27 @@
             </div>
         </section>
 
-        <!-- SECTION 1: MODERN BROWSER GAMES (TEKKEN 5 PARALLAX ACTIVE) -->
+        <!-- SECTION: GTA 5 ARENA (MIDDLE STAGE - BACKGROUND CROSSFADES TO GTA 5 VIDEO + AUDIO) -->
+        <section id="gta-arena" class="section-block">
+            <div class="section-header-box">
+                <h2 class="section-title title-gold">Los Santos Strip: Play GTA 5 in Your Browser</h2>
+                <p class="section-desc">Open-world crime, heists and chaos - jump into Grand Theft Auto V right from this page.</p>
+            </div>
+
+            <div class="grid">
+                <article class="card featured-tekken5 featured-gta5 featured-has-art" id="gtaCard">
+                    <div class="featured-art" role="img" aria-label="Grand Theft Auto V artwork"></div>
+                    <div class="featured-info">
+                        <span class="featured-badge">Featured Open-World Action</span>
+                        <h3>Play GTA 5 in Browser</h3>
+                        <p>Head over to <strong>Grand Theft Auto V</strong> (fiveplay.lol) and jump in from your web browser. Heists, high-speed chases and cinematic open-world action across Los Santos.</p>
+                    </div>
+                    <a href="https://fiveplay.lol/" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Play GTA 5 in Browser</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION 1: MODERN BROWSER GAMES (GTA 5 VIDEO BACKGROUND CONTINUES) -->
         <section id="other-games" class="section-block">
             <div class="section-header-box">
                 <h2 class="section-title title-cyan">Top 10 Modern Browser Game Portals</h2>
@@ -167,7 +189,7 @@
             </div>
         </section>
 
-        <!-- SECTION 3: NEON TIC-TAC-TOE AT THE BOTTOM (TEKKEN 3 PARALLAX ACTIVE) -->
+        <!-- SECTION 3: NEON TIC-TAC-TOE AT THE BOTTOM (GTA 5 VIDEO BACKGROUND CONTINUES) -->
         <section id="minigame-lounge" class="section-block" style="margin-bottom: 0;">
             <div class="section-header-box">
                 <h2 class="section-title title-gold">Arcade Lounge: Neon Tic-Tac-Toe</h2>
